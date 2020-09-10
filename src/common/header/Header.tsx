@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar className={classes.bar}>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h3" className={classes.title}>
                         Tyra Krehbiel
                     </Typography>
                     <Button className={classes.button} color="inherit" component={Link} to="/about">
