@@ -1,12 +1,13 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import HomePage from './features/home-page/HomePage';
+
 const App: React.FC = () => {
   return (
     <>
       <CssBaseline />
-      {/* The rest of your application */}
-      <h1>Hello!</h1>
+      <HomePage />
     </>
   );
 }
