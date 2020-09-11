@@ -3,7 +3,6 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Header from './common/header/Header';
-
 import About from './features/about/About';
 import Contact from './features/contact/Contact';
 import Projects from './features/projects/Projects';
@@ -16,8 +15,7 @@ const App: React.FC = () => {
       <CssBaseline />
       <Header />
       <Switch>
-        <Redirect path="/portfolio/" exact to={{pathname:'/about'}} />        
-        {/* <Route exact path='/portfolio/' component={About} /> */}
+        <Redirect path="/portfolio/" exact to={{pathname:'/portfolio/about'}} />        
         <Route exact path='/portfolio/about' component={About} />
         <Route exact path='/portfolio/contact' component={Contact} />
         <Route exact path='/portfolio/projects' component={Projects} />

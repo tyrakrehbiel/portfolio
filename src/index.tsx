@@ -95,7 +95,6 @@ const theme = createMuiTheme({
             }
         }
     }
-
 });
 
 ReactDOM.render(

@@ -1,8 +1,9 @@
+import { Typography } from '@material-ui/core';
 import * as React from 'react';
 
 const Art: React.FC = () => {
     return(
-        <h1>Art Page</h1>
+        <Typography variant="h1">Art Page</Typography>
     )
 }
 

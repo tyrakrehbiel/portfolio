@@ -74,77 +74,76 @@ const About: React.FC = () => {
     const classes = useStyles();
 
     return(
+        <Box
+            className={classes.root}
+            display="flex"
+            flexWrap="wrap"
+            flexDirection="row"
+            alignItems="stretch"
+        >
             <Box
-                className={classes.root}
+                className={classes.profile}
                 display="flex"
-                flexWrap="wrap"
-                flexDirection="row"
-                alignItems="stretch"
+                flexDirection="column"
+                alignItems="center"
+                justifyContent="space-evenly"
             >
-                <Box
-                    className={classes.profile}
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    justifyContent="space-evenly"
+                <img className={classes.image} alt="Tyra Krehbiel" src={profile_pic} />
+                <Typography variant="h3">
+                    About Me <hr/>
+                </Typography>
+                <Typography className={classes.profBody} variant="body1">
+                    Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
+                    expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
+                    as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
+                    experience in full stack software development and particular interest in UI/UX design.
+                </Typography>
+                <Button 
+                    className={classes.button} 
+                    href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing" 
+                    variant="outlined"
                 >
-                    <img className={classes.image} alt="Tyra Krehbiel" src={profile_pic} />
-                    <Typography variant="h3">
-                        About Me <hr/>
-                    </Typography>
-                    <Typography className={classes.profBody} variant="body1">
-                        Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
-                        expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
-                        as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
-                        experience in full stack software development and particular interest in UI/UX design.
+                    View My Resume
+                </Button>
+            </Box>
+            <Box
+                className={classes.about}
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+            >
+                <Typography variant="h1" className={classes.title}>
+                    About This Site--with profile/about
+                </Typography>
+                <Typography variant="subtitle1">
+                    Simple. Light. Modern. Intuitive.
+                </Typography>
+                <SettingsIcon className={classes.icon}/>
+                <Paper className={classes.paper}>
+                    <Typography variant="body1">
+                        This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. 
+                        <br/> Deployment was handled through GitHub Pages. You can view the repository here for a closer look:
                     </Typography>
                     <Button 
                         className={classes.button} 
-                        href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing" 
+                        href="https://github.com/tyrakrehbiel/portfolio" 
                         variant="outlined"
                     >
-                        View My Resume
+                        GitHub
                     </Button>
-                </Box>
-                <Box
-                    className={classes.about}
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    // justifyContent="space-around"
-                >
-                    <Typography variant="h1" className={classes.title}>
-                        About This Site
+                    <Typography variant="body1">
+                        Please feel free to explore my site, view my&nbsp; 
+                        <Link className={classes.link} href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing">resume</Link>, 
+                        coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
+                        and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
+                        <br/> 
+                        or even get in&nbsp; <Link className={classes.link} href="/contact">contact</Link>&nbsp;
+                        with me if you'd like to know more!
                     </Typography>
-                    <Typography variant="subtitle1">
-                        Simple. Light. Modern. Intuitive.
-                    </Typography>
-                    <SettingsIcon className={classes.icon}/>
-                    <Paper className={classes.paper}>
-                        <Typography variant="body1">
-                            This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. <br/> Deployment was
-                            handled through ___________. You can view the repository here for a closer look:
-                        </Typography>
-                        <Button 
-                            className={classes.button} 
-                            href="https://github.com/tyrakrehbiel/tkrehbielportfolio" 
-                            variant="outlined"
-                        >
-                            GitHub
-                        </Button>
-                        <Typography variant="body1">
-                            Please feel free to explore my site, view my&nbsp; 
-                            <Link className={classes.link} href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing">resume</Link>, 
-                            coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
-                            and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
-                            <br/> 
-                            or even get in&nbsp; <Link className={classes.link} href="/contact">contact</Link>&nbsp;
-                            with me if you'd like to know more!
-                        </Typography>
-                    </Paper>
-                    <CloudIcon className={classes.icon}/>
-                </Box>
+                </Paper>
+                <CloudIcon className={classes.icon}/>
             </Box>
+        </Box>
     )
 }
 
