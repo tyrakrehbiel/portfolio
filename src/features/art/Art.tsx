@@ -3,7 +3,7 @@ import * as React from 'react';
 
 const Art: React.FC = () => {
     return(
-        <Typography variant="h1">Art Page</Typography>
+        <Typography variant="h1">Art Page | Coming Soon!</Typography>
     )
 }
 

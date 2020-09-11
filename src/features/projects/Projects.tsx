@@ -26,8 +26,8 @@ const Projects: React.FC = () => {
 
     return(
         <>
-            <Typography variant="h1" className={classes.title}>Projects</Typography>
-            <Box
+            <Typography variant="h1" className={classes.title}>Projects | Coming Soon!</Typography>
+            {/* <Box
                 className={classes.root}
                 display="flex"
                 flexWrap="wrap"
@@ -100,7 +100,7 @@ const Projects: React.FC = () => {
                 <Typography variant="body1">test4</Typography>
 
                 </Box>
-            </Box>
+            </Box> */}
        </>
     )
 }

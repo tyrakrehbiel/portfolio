@@ -3,7 +3,7 @@ import * as React from 'react';
 
 const Contact: React.FC = () => {
     return(
-        <Typography variant="h1">Contact Page</Typography>
+        <Typography variant="h1">Contact Page | Coming Soon!</Typography>
     )
 }
 
