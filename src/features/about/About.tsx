@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { 
-    makeStyles, Theme, createStyles, Box, Typography
+    makeStyles, Theme, createStyles, Box, Typography, Divider
 } from '@material-ui/core';
 
 import profile_pic from '../../images/profile-pic.jpg'
@@ -12,24 +12,28 @@ const useStyles = makeStyles((theme: Theme) =>
             flexgrow: 1,
         },
         profile: {
-            backgroundColor: theme.palette.primary.main,
-            width: "30vw",
+            borderRadius: theme.shape.borderRadius,
+            width: "32vw",
             height: "90vh",
-            margin: "1%",
+            margin: "10px",
 
         },
         about: {
-            // backgroundColor: 'black',
+            borderRadius: theme.shape.borderRadius,
+            backgroundColor: theme.palette.primary.main,
             width: "65vw",
             height: "90vh",
-            margin: "1%",
+            margin: "10px",
+            padding: "10px",
         },
         image: {
-            width: '75%',
+            width: '65%',
             borderRadius: theme.shape.borderRadius,
         },
-        profileText: {
-            // color: 'white',
+        aboutMe: {
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            textAlign: "justify", 
         },
     }),
 );
@@ -37,25 +41,17 @@ const useStyles = makeStyles((theme: Theme) =>
 const About: React.FC = () => {
 
     const classes = useStyles();
-    
-    const profileInfo = (
-        <>
-            <Typography variant="h3" className={classes.profileText}>
-                Tyra I'Daya Krehbiel
-            </Typography>
-            {/* <Typography variant="body1">
-                DOB:  12 / 22 / 1998
-            </Typography>
-            <Typography>
-                Hometown: Leesburg, VA
-            </Typography> */}
-        </>
-    )
 
     const aboutMe = (
-        <Typography>
-            About Me
-        </Typography>
+        <div className={classes.aboutMe}>
+            <Typography variant="body1">
+                Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
+                expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
+                as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
+                experience in full stack software development and particular interest in UI/UX design. Take a look at my 
+                Resume and Projects pages to learn more!
+            </Typography>
+        </div>
     );
     
     const aboutSite = (
@@ -80,12 +76,14 @@ const About: React.FC = () => {
                     justifyContent="space-around"
                 >
                     <img className={classes.image} alt="Tyra Krehbiel" src={profile_pic} />
-                    {profileInfo}
+                    <Typography variant="h3">
+                        About Me <hr/>
+                    </Typography>
+                    {aboutMe}
                 </Box>
                 <Box
                     className={classes.about}
                 >
-                    {aboutMe}
                     {aboutSite}
                 </Box>
             </Box>

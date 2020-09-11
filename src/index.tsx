@@ -6,7 +6,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { grey } from '@material-ui/core/colors';
 
 // Font imports 
 import 'fontsource-raleway';
@@ -21,7 +20,7 @@ const medgrey = '#272727'
 const theme = createMuiTheme({
     palette: {
         background: {
-            default: 'white',
+            default: '#FFF',
         },
         primary: {
             main: lightgrey,
@@ -31,9 +30,9 @@ const theme = createMuiTheme({
         secondary: {
             main: medgrey,
             dark: green,
-            contrastText: '#FFF'
+            contrastText: '#FFF',
         },
-        divider: 'white',
+        divider: green,
         // contrastThreshold: 3,
         // tonalOffset: 0.2
     },
@@ -62,20 +61,18 @@ const theme = createMuiTheme({
         body1: {
             font: 'Open Sans',
             fontSize: '1rem',
-            color: grey[800],
+            color: medgrey,
         },
         subtitle1: {
             font: 'Open Sans',
             fontSize: '0.9rem',
-            color: grey[800]
+            color: medgrey
         },
     },
     shape: {
         borderRadius: 2
     },
     overrides: {
-        MuiTypography: {
-        },
         MuiButton: {
             root: {
                 textTransform: 'uppercase',
