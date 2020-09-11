@@ -17,12 +17,13 @@ const App: React.FC = () => {
       <CssBaseline />
       <Header />
       <Switch>
-        <Redirect path="/" exact to={{pathname:'/about'}} />        
-        <Route exact path='/about' component={About} />
-        <Route exact path='/contact' component={Contact} />
-        <Route exact path='/projects' component={Projects} />
-        <Route exact path='/resume' component={Resume} />
-        <Route exact path='/art' component={Art} />
+        {/* <Redirect path="/" exact to={{pathname:'/about'}} />         */}
+        <Route exact path='/tkrehbielportfolio/' component={About} />
+        <Route exact path='/tkrehbielportfolio/about' component={About} />
+        <Route exact path='/tkrehbielportfolio/contact' component={Contact} />
+        <Route exact path='/tkrehbielportfolio/projects' component={Projects} />
+        <Route exact path='/tkrehbielportfolio/resume' component={Resume} />
+        <Route exact path='/tkrehbielportfolio/art' component={Art} />
       </Switch>
     </>
   );
