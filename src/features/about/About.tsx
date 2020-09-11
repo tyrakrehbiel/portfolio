@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme: Theme) =>
         image: {
             width: '65%',
             borderRadius: theme.shape.borderRadius,
+            boxShadow: '1px 2px 5px 0 rgba(63,63,68,0.1)'
         },
         title: {
             textAlign: "center",
