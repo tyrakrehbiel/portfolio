@@ -44,10 +44,10 @@ const App: React.FC = () => {
       <Header />
       <HashRouter basename='/'>
         <Route exact path="/" component={About} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/art" component={Art} />
+        <Route exact path="/#/about" component={About} />
+        <Route exact path="/#/contact" component={Contact} />
+        <Route exact path="/#/projects" component={Projects} />
+        <Route exact path="/#/art" component={Art} />
       </HashRouter>
     </>
   );
