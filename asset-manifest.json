@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/tkrehbielportfolio/static/js/main.bc591733.chunk.js",
+    "main.js.map": "/tkrehbielportfolio/static/js/main.bc591733.chunk.js.map",
+    "runtime-main.js": "/tkrehbielportfolio/static/js/runtime-main.95b86ac7.js",
+    "runtime-main.js.map": "/tkrehbielportfolio/static/js/runtime-main.95b86ac7.js.map",
+    "static/css/2.cf0597ac.chunk.css": "/tkrehbielportfolio/static/css/2.cf0597ac.chunk.css",
+    "static/js/2.bd4053c5.chunk.js": "/tkrehbielportfolio/static/js/2.bd4053c5.chunk.js",
+    "static/js/2.bd4053c5.chunk.js.map": "/tkrehbielportfolio/static/js/2.bd4053c5.chunk.js.map",
+    "index.html": "/tkrehbielportfolio/index.html",
+    "precache-manifest.c07254205bcebf26c6403b848e97feef.js": "/tkrehbielportfolio/precache-manifest.c07254205bcebf26c6403b848e97feef.js",
+    "service-worker.js": "/tkrehbielportfolio/service-worker.js",
+    "static/css/2.cf0597ac.chunk.css.map": "/tkrehbielportfolio/static/css/2.cf0597ac.chunk.css.map",
+    "static/js/2.bd4053c5.chunk.js.LICENSE.txt": "/tkrehbielportfolio/static/js/2.bd4053c5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/tkrehbielportfolio/static/media/raleway-vietnamese-400-normal.59568860.woff2",
+    "static/media/profile-pic.jpg": "/tkrehbielportfolio/static/media/profile-pic.3c09da7e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95b86ac7.js",
+    "static/css/2.cf0597ac.chunk.css",
+    "static/js/2.bd4053c5.chunk.js",
+    "static/js/main.bc591733.chunk.js"
+  ]
+}
