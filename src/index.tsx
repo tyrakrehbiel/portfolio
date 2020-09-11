@@ -24,6 +24,7 @@ const theme = createMuiTheme({
             default: '#FFF',
         },
         primary: {
+            light: '#FFF',
             main: lightgrey,
             dark: medgrey,
             contrastText: medgrey
@@ -64,12 +65,17 @@ const theme = createMuiTheme({
             fontSize: '1rem',
             color: medgrey,
         },
+        body2: {
+            font: 'Open Sans',
+            fontSize: '1rem',
+            color: '#FFF',
+        },
         subtitle1: {
             font: 'Open Sans',
             fontSize: '0.8rem',
-            letterSpacing: '2px',
+            letterSpacing: '7px',
             textTransform: 'uppercase',
-            color: medgrey
+            color: green,
         },
     },
     shape: {

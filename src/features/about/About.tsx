@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { 
-    makeStyles, Theme, createStyles, Box, Typography, Button, Link
+    makeStyles, Theme, createStyles, Box, Typography, Button, Link, Paper
 } from '@material-ui/core';
 
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -20,29 +20,36 @@ const useStyles = makeStyles((theme: Theme) =>
             height: "90vh",
 
         },
+        profBody: {
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            textAlign: "justify", 
+        },
         about: {
             borderRadius: theme.shape.borderRadius,
-            backgroundColor: theme.palette.secondary.main,
+            backgroundColor: theme.palette.secondary.dark,
             width: "65vw",
             height: "90vh",
             marginTop: "10px",
-            padding: "20px",
-            paddingLeft: "40px",
-            paddingRight: "40px",
+        },
+        paper: {
+            borderRadius: theme.shape.borderRadius,
+            textAlign: "center",
+            backgroundColor: theme.palette.primary.main,
+            paddingTop: "15px",
+            paddingBottom: "15px",
+            padding: "10px",
+            width: "95%"
         },
         image: {
             width: '65%',
             borderRadius: theme.shape.borderRadius,
         },
-        aboutMe: {
-            paddingLeft: "20px",
-            paddingRight: "20px",
-            textAlign: "justify", 
-        },
         title: {
             textAlign: "center",
             marginTop: "20px",
             marginBottom: "10px",
+            color: theme.palette.primary.light,
         },
         button: {
             textAlign: "center",
@@ -83,7 +90,7 @@ const About: React.FC = () => {
                     <Typography variant="h3">
                         About Me <hr/>
                     </Typography>
-                    <Typography className={classes.aboutMe} variant="body1">
+                    <Typography className={classes.profBody} variant="body1">
                         Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
                         expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
                         as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
@@ -112,27 +119,29 @@ const About: React.FC = () => {
                         Simple. Light. Modern. Intuitive.
                     </Typography>
                     <SettingsIcon className={classes.icon}/>
-                    <Typography variant="body1">
-                        This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. <br/> Deployment was
-                        handled through ___________. You can view the repository here for a closer look:
-                    </Typography>
-                    <Button 
-                        className={classes.button} 
-                        href="https://github.com/tyrakrehbiel/tkrehbielportfolio" 
-                        color="inherit"
-                        variant="outlined"
-                    >
-                        GitHub
-                    </Button>
-                    <Typography variant="body1">
-                        Please feel free to explore my site, view my&nbsp; 
-                        <Link className={classes.link} href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing">resume</Link>, 
-                        coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
-                        and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
-                        <br/> 
-                        or even get in&nbsp; <Link className={classes.link} href="/contact">contact</Link>&nbsp;
-                        with me if you'd like to know more!
-                    </Typography>
+                    <Paper className={classes.paper}>
+                        <Typography variant="body1">
+                            This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. <br/> Deployment was
+                            handled through ___________. You can view the repository here for a closer look:
+                        </Typography>
+                        <Button 
+                            className={classes.button} 
+                            href="https://github.com/tyrakrehbiel/tkrehbielportfolio" 
+                            color="inherit"
+                            variant="outlined"
+                        >
+                            GitHub
+                        </Button>
+                        <Typography variant="body1">
+                            Please feel free to explore my site, view my&nbsp; 
+                            <Link className={classes.link} href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing">resume</Link>, 
+                            coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
+                            and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
+                            <br/> 
+                            or even get in&nbsp; <Link className={classes.link} href="/contact">contact</Link>&nbsp;
+                            with me if you'd like to know more!
+                        </Typography>
+                    </Paper>
                     <CloudIcon className={classes.icon}/>
                 </Box>
             </Box>
