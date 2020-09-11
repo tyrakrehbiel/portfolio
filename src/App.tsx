@@ -7,7 +7,6 @@ import Header from './common/header/Header';
 import About from './features/about/About';
 import Contact from './features/contact/Contact';
 import Projects from './features/projects/Projects';
-import Resume from './features/resume/Resume';
 import Art from './features/art/Art';
 
 
@@ -22,7 +21,6 @@ const App: React.FC = () => {
         <Route exact path='/portfolio/about' component={About} />
         <Route exact path='/portfolio/contact' component={Contact} />
         <Route exact path='/portfolio/projects' component={Projects} />
-        <Route exact path='/portfolio/resume' component={Resume} />
         <Route exact path='/portfolio/art' component={Art} />
       </Switch>
     </>

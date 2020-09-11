@@ -89,6 +89,14 @@ const About: React.FC = () => {
                         as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
                         experience in full stack software development and particular interest in UI/UX design.
                     </Typography>
+                    <Button 
+                        className={classes.button} 
+                        href="https://drive.google.com/file/d/1VgRKUaGTuHmbUUHF70ssOA-uLmdC_KMq/view?usp=sharing" 
+                        color="inherit"
+                        variant="outlined"
+                    >
+                        View My Resume
+                    </Button>
                 </Box>
                 <Box
                     className={classes.about}
@@ -118,7 +126,7 @@ const About: React.FC = () => {
                     </Button>
                     <Typography variant="body1">
                         Please feel free to explore my site, view my&nbsp; 
-                        <Link className={classes.link} href="/resume">resume</Link>, 
+                        <Link className={classes.link} href="https://drive.google.com/file/d/1VgRKUaGTuHmbUUHF70ssOA-uLmdC_KMq/view?usp=sharing">resume</Link>, 
                         coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
                         and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
                         <br/> 
