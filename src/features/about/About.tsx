@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
             width: "65vw",
             height: "90vh",
             marginTop: "10px",
+            padding: "10px",
         },
         paper: {
             borderRadius: theme.shape.borderRadius,
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme: Theme) =>
             paddingTop: "15px",
             paddingBottom: "15px",
             padding: "10px",
-            width: "95%"
+            width: "100%",
         },
         image: {
             width: '65%',
