@@ -16,8 +16,8 @@ const App: React.FC = () => {
       <CssBaseline />
       <Header />
       <Switch>
-        {/* <Redirect path="/" exact to={{pathname:'/about'}} />         */}
-        <Route exact path='/portfolio/' component={About} />
+        <Redirect path="/portfolio/" exact to={{pathname:'/about'}} />        
+        {/* <Route exact path='/portfolio/' component={About} /> */}
         <Route exact path='/portfolio/about' component={About} />
         <Route exact path='/portfolio/contact' component={Contact} />
         <Route exact path='/portfolio/projects' component={Projects} />

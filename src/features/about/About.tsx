@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         about: {
             borderRadius: theme.shape.borderRadius,
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: theme.palette.secondary.main,
             width: "65vw",
             height: "90vh",
             marginTop: "10px",

@@ -14,8 +14,9 @@ import 'fontsource-open-sans';
 const fontFamily = ['raleway', 'open sans'].join(',');
 
 const lightgrey = '#F6F6F6';
-const green = '#51826F' // accent color
-const medgrey = '#272727'
+// const green = '#51826F' // accent color
+const green = '#E2EAE1';
+const medgrey = '#272727';
 
 const theme = createMuiTheme({
     palette: {
@@ -24,13 +25,13 @@ const theme = createMuiTheme({
         },
         primary: {
             main: lightgrey,
-            dark: green,
+            dark: medgrey,
             contrastText: medgrey
         },
         secondary: {
-            main: medgrey,
-            dark: green,
-            contrastText: '#FFF',
+            main: green,
+            dark: medgrey,
+            contrastText: '#000',
         },
         divider: green,
         // contrastThreshold: 3,
@@ -43,7 +44,7 @@ const theme = createMuiTheme({
             font: 'Raleway',
             fontSize: '2.25rem',
             letterSpacing: '2px',
-            color: green,
+            color: '#000',
         },
         h2: {
             font: 'Raleway',
