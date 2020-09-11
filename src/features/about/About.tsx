@@ -114,7 +114,7 @@ const About: React.FC = () => {
                 alignItems="center"
             >
                 <Typography variant="h1" className={classes.title}>
-                    About This Site--with profile/about
+                    About This Site
                 </Typography>
                 <Typography variant="subtitle1">
                     Simple. Light. Modern. Intuitive.
@@ -139,7 +139,7 @@ const About: React.FC = () => {
                         and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
                         <br/> 
                         or even get in&nbsp; <Link className={classes.link} href="/contact">contact</Link>&nbsp;
-                        with me if you'd like to know more!
+                        with me if you'd like to know more! (coming soon!)
                     </Typography>
                 </Paper>
                 <CloudIcon className={classes.icon}/>
