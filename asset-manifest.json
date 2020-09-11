@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/tkrehbielportfolio/static/js/main.bc591733.chunk.js",
-    "main.js.map": "/tkrehbielportfolio/static/js/main.bc591733.chunk.js.map",
-    "runtime-main.js": "/tkrehbielportfolio/static/js/runtime-main.95b86ac7.js",
-    "runtime-main.js.map": "/tkrehbielportfolio/static/js/runtime-main.95b86ac7.js.map",
-    "static/css/2.cf0597ac.chunk.css": "/tkrehbielportfolio/static/css/2.cf0597ac.chunk.css",
-    "static/js/2.bd4053c5.chunk.js": "/tkrehbielportfolio/static/js/2.bd4053c5.chunk.js",
-    "static/js/2.bd4053c5.chunk.js.map": "/tkrehbielportfolio/static/js/2.bd4053c5.chunk.js.map",
-    "index.html": "/tkrehbielportfolio/index.html",
-    "precache-manifest.c07254205bcebf26c6403b848e97feef.js": "/tkrehbielportfolio/precache-manifest.c07254205bcebf26c6403b848e97feef.js",
-    "service-worker.js": "/tkrehbielportfolio/service-worker.js",
-    "static/css/2.cf0597ac.chunk.css.map": "/tkrehbielportfolio/static/css/2.cf0597ac.chunk.css.map",
-    "static/js/2.bd4053c5.chunk.js.LICENSE.txt": "/tkrehbielportfolio/static/js/2.bd4053c5.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/tkrehbielportfolio/static/media/raleway-vietnamese-400-normal.59568860.woff2",
-    "static/media/profile-pic.jpg": "/tkrehbielportfolio/static/media/profile-pic.3c09da7e.jpg"
+    "main.js": "/portfolio/static/js/main.e0d0d6c1.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e0d0d6c1.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/css/2.970a9b6a.chunk.css": "/portfolio/static/css/2.970a9b6a.chunk.css",
+    "static/js/2.54669a92.chunk.js": "/portfolio/static/js/2.54669a92.chunk.js",
+    "static/js/2.54669a92.chunk.js.map": "/portfolio/static/js/2.54669a92.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.b2678e4a4b64cab12ddafcbc3481678d.js": "/portfolio/precache-manifest.b2678e4a4b64cab12ddafcbc3481678d.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.970a9b6a.chunk.css.map": "/portfolio/static/css/2.970a9b6a.chunk.css.map",
+    "static/js/2.54669a92.chunk.js.LICENSE.txt": "/portfolio/static/js/2.54669a92.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/portfolio/static/media/raleway-vietnamese-400-normal.59568860.woff2",
+    "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.3c09da7e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.95b86ac7.js",
-    "static/css/2.cf0597ac.chunk.css",
-    "static/js/2.bd4053c5.chunk.js",
-    "static/js/main.bc591733.chunk.js"
+    "static/js/runtime-main.209c2d7e.js",
+    "static/css/2.970a9b6a.chunk.css",
+    "static/js/2.54669a92.chunk.js",
+    "static/js/main.e0d0d6c1.chunk.js"
   ]
 }
