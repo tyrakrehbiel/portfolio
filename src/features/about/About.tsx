@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { 
-    makeStyles, Theme, createStyles, Box, Typography, Button
+    makeStyles, Theme, createStyles, Box, Typography, Button, Link
 } from '@material-ui/core';
 
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -54,6 +54,9 @@ const useStyles = makeStyles((theme: Theme) =>
             marginTop: "5%",
             marginBottom: "5%",
         },
+        link: {
+            color: theme.palette.primary.dark,
+        },
     }),
 );
 
@@ -84,8 +87,7 @@ const About: React.FC = () => {
                         Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
                         expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
                         as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
-                        experience in full stack software development and particular interest in UI/UX design. Take a look at my 
-                        Resume and Projects pages to learn more!
+                        experience in full stack software development and particular interest in UI/UX design.
                     </Typography>
                 </Box>
                 <Box
@@ -115,7 +117,12 @@ const About: React.FC = () => {
                         GitHub
                     </Button>
                     <Typography variant="body1">
-                        Please feel free to explore my site, view my resume, coding projects, and artwork, <br/> or even get in contact 
+                        Please feel free to explore my site, view my&nbsp; 
+                        <Link className={classes.link} href="/resume">resume</Link>, 
+                        coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
+                        and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
+                        <br/> 
+                        or even get in&nbsp; <Link className={classes.link} href="/contact">contact</Link>&nbsp;
                         with me if you'd like to know more!
                     </Typography>
                     <CloudIcon className={classes.icon}/>
