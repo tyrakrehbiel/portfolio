@@ -77,7 +77,7 @@ const About: React.FC = () => {
                     display="flex"
                     flexDirection="column"
                     alignItems="center"
-                    justifyContent="space-around"
+                    justifyContent="space-evenly"
                 >
                     <img className={classes.image} alt="Tyra Krehbiel" src={profile_pic} />
                     <Typography variant="h3">
