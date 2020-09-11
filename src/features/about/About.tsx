@@ -16,9 +16,8 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         profile: {
             borderRadius: theme.shape.borderRadius,
-            width: "32vw",
+            width: "35vw",
             height: "90vh",
-            margin: "10px",
 
         },
         about: {
@@ -26,8 +25,10 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: theme.palette.primary.main,
             width: "65vw",
             height: "90vh",
-            margin: "10px",
+            marginTop: "10px",
             padding: "20px",
+            paddingLeft: "40px",
+            paddingRight: "40px",
         },
         image: {
             width: '65%',
@@ -39,9 +40,19 @@ const useStyles = makeStyles((theme: Theme) =>
             textAlign: "justify", 
         },
         title: {
+            textAlign: "center",
+            marginTop: "20px",
+            marginBottom: "10px",
         },
         button: {
             textAlign: "center",
+            marginTop: "2%",
+            marginBottom: "2%",
+        },
+        icon: {
+            textAlign: "center",
+            marginTop: "5%",
+            marginBottom: "5%",
         },
     }),
 );
@@ -81,7 +92,7 @@ const About: React.FC = () => {
                     className={classes.about}
                     display="flex"
                     flexDirection="column"
-                    alignItems="baseline"
+                    alignItems="center"
                     // justifyContent="space-around"
                 >
                     <Typography variant="h1" className={classes.title}>
@@ -90,9 +101,9 @@ const About: React.FC = () => {
                     <Typography variant="subtitle1">
                         Simple. Light. Modern. Intuitive.
                     </Typography>
-                    <SettingsIcon/>
+                    <SettingsIcon className={classes.icon}/>
                     <Typography variant="body1">
-                        This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. Deployment was
+                        This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. <br/> Deployment was
                         handled through ___________. You can view the repository here for a closer look:
                     </Typography>
                     <Button 
@@ -104,10 +115,10 @@ const About: React.FC = () => {
                         GitHub
                     </Button>
                     <Typography variant="body1">
-                        Please feel free to explore my site, view my resume, coding projects, and artwork, or even get in contact 
+                        Please feel free to explore my site, view my resume, coding projects, and artwork, <br/> or even get in contact 
                         with me if you'd like to know more!
                     </Typography>
-                    <CloudIcon/>
+                    <CloudIcon className={classes.icon}/>
                 </Box>
             </Box>
     )
