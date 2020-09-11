@@ -1,8 +1,11 @@
 import * as React from 'react';
 
 import { 
-    makeStyles, Theme, createStyles, Box, Typography, Divider
+    makeStyles, Theme, createStyles, Box, Typography, Button
 } from '@material-ui/core';
+
+import SettingsIcon from '@material-ui/icons/Settings';
+import CloudIcon from '@material-ui/icons/Cloud';
 
 import profile_pic from '../../images/profile-pic.jpg'
 
@@ -24,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
             width: "65vw",
             height: "90vh",
             margin: "10px",
-            padding: "10px",
+            padding: "20px",
         },
         image: {
             width: '65%',
@@ -35,30 +38,17 @@ const useStyles = makeStyles((theme: Theme) =>
             paddingRight: "20px",
             textAlign: "justify", 
         },
+        title: {
+        },
+        button: {
+            textAlign: "center",
+        },
     }),
 );
 
 const About: React.FC = () => {
 
     const classes = useStyles();
-
-    const aboutMe = (
-        <div className={classes.aboutMe}>
-            <Typography variant="body1">
-                Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
-                expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
-                as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
-                experience in full stack software development and particular interest in UI/UX design. Take a look at my 
-                Resume and Projects pages to learn more!
-            </Typography>
-        </div>
-    );
-    
-    const aboutSite = (
-        <Typography>
-            About This Site
-        </Typography>
-    );
 
     return(
             <Box
@@ -79,12 +69,45 @@ const About: React.FC = () => {
                     <Typography variant="h3">
                         About Me <hr/>
                     </Typography>
-                    {aboutMe}
+                    <Typography className={classes.aboutMe} variant="body1">
+                        Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
+                        expecting to graduate in May 2021. I will be receiving a B.A. in Interdisciplinary Computer Science, 
+                        as well as a B.A. in Studio Art, with a concentration in painting. I have personal and professional 
+                        experience in full stack software development and particular interest in UI/UX design. Take a look at my 
+                        Resume and Projects pages to learn more!
+                    </Typography>
                 </Box>
                 <Box
                     className={classes.about}
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="baseline"
+                    // justifyContent="space-around"
                 >
-                    {aboutSite}
+                    <Typography variant="h1" className={classes.title}>
+                        About This Site
+                    </Typography>
+                    <Typography variant="subtitle1">
+                        Simple. Light. Modern. Intuitive.
+                    </Typography>
+                    <SettingsIcon/>
+                    <Typography variant="body1">
+                        This portfolio site was created using the React library, primarily in Typescript, HTML, and CSS. Deployment was
+                        handled through ___________. You can view the repository here for a closer look:
+                    </Typography>
+                    <Button 
+                        className={classes.button} 
+                        href="https://github.com/tyrakrehbiel/tkrehbielportfolio" 
+                        color="inherit"
+                        variant="outlined"
+                    >
+                        GitHub
+                    </Button>
+                    <Typography variant="body1">
+                        Please feel free to explore my site, view my resume, coding projects, and artwork, or even get in contact 
+                        with me if you'd like to know more!
+                    </Typography>
+                    <CloudIcon/>
                 </Box>
             </Box>
     )

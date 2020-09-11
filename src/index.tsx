@@ -65,7 +65,9 @@ const theme = createMuiTheme({
         },
         subtitle1: {
             font: 'Open Sans',
-            fontSize: '0.9rem',
+            fontSize: '0.8rem',
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
             color: medgrey
         },
     },
