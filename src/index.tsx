@@ -6,7 +6,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { grey } from '@material-ui/core/colors';
 
 // Font imports 
 import 'fontsource-raleway';
@@ -21,17 +20,19 @@ const medgrey = '#272727'
 const theme = createMuiTheme({
     palette: {
         background: {
-            default: 'white',
+            default: '#FFF',
         },
         primary: {
             main: lightgrey,
+            dark: green,
             contrastText: medgrey
         },
         secondary: {
             main: medgrey,
-            contrastText: '#FFF'
+            dark: green,
+            contrastText: '#FFF',
         },
-        divider: 'white',
+        divider: green,
         // contrastThreshold: 3,
         // tonalOffset: 0.2
     },
@@ -46,35 +47,34 @@ const theme = createMuiTheme({
         },
         h2: {
             font: 'Raleway',
-            fontSize: '1.75rem',
+            fontSize: '1.25rem',
             letterSpacing: '2px',
-            color: green,
+            textTransform: 'uppercase',
+            color: medgrey,
         },
         h3: {
             font: 'Raleway',
             fontSize: '1.25rem',
             letterSpacing: '2px',
             color: medgrey,
-            textTransform: 'uppercase',
-            fontWeight: 500,
         },
         body1: {
             font: 'Open Sans',
             fontSize: '1rem',
-            color: grey[800],
+            color: medgrey,
         },
         subtitle1: {
             font: 'Open Sans',
-            fontSize: '0.9rem',
-            color: grey[800]
+            fontSize: '0.8rem',
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
+            color: medgrey
         },
     },
     shape: {
         borderRadius: 2
     },
     overrides: {
-        MuiTypography: {
-        },
         MuiButton: {
             root: {
                 textTransform: 'uppercase',
