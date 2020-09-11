@@ -91,7 +91,7 @@ const About: React.FC = () => {
                     </Typography>
                     <Button 
                         className={classes.button} 
-                        href="https://drive.google.com/file/d/1VgRKUaGTuHmbUUHF70ssOA-uLmdC_KMq/view?usp=sharing" 
+                        href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing" 
                         color="inherit"
                         variant="outlined"
                     >
@@ -126,7 +126,7 @@ const About: React.FC = () => {
                     </Button>
                     <Typography variant="body1">
                         Please feel free to explore my site, view my&nbsp; 
-                        <Link className={classes.link} href="https://drive.google.com/file/d/1VgRKUaGTuHmbUUHF70ssOA-uLmdC_KMq/view?usp=sharing">resume</Link>, 
+                        <Link className={classes.link} href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing">resume</Link>, 
                         coding&nbsp; <Link className={classes.link} href="/projects">projects</Link>, 
                         and&nbsp; <Link className={classes.link} href="/artwork">artwork</Link>, 
                         <br/> 
