@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.eea11836.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.eea11836.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1fb14962.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1fb14962.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.970a9b6a.chunk.css": "/portfolio/static/css/2.970a9b6a.chunk.css",
-    "static/js/2.940b0810.chunk.js": "/portfolio/static/js/2.940b0810.chunk.js",
-    "static/js/2.940b0810.chunk.js.map": "/portfolio/static/js/2.940b0810.chunk.js.map",
+    "static/js/2.2420cda1.chunk.js": "/portfolio/static/js/2.2420cda1.chunk.js",
+    "static/js/2.2420cda1.chunk.js.map": "/portfolio/static/js/2.2420cda1.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.3c32e50c471f395b1d902514d3f9a381.js": "/portfolio/precache-manifest.3c32e50c471f395b1d902514d3f9a381.js",
+    "precache-manifest.a804efac95fc65bc5eafb81843e4976e.js": "/portfolio/precache-manifest.a804efac95fc65bc5eafb81843e4976e.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.970a9b6a.chunk.css.map": "/portfolio/static/css/2.970a9b6a.chunk.css.map",
-    "static/js/2.940b0810.chunk.js.LICENSE.txt": "/portfolio/static/js/2.940b0810.chunk.js.LICENSE.txt",
+    "static/js/2.2420cda1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2420cda1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/raleway-vietnamese-400-normal.59568860.woff2",
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.3c09da7e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.970a9b6a.chunk.css",
-    "static/js/2.940b0810.chunk.js",
-    "static/js/main.eea11836.chunk.js"
+    "static/js/2.2420cda1.chunk.js",
+    "static/js/main.1fb14962.chunk.js"
   ]
 }
