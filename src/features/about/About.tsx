@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         about: {
             borderRadius: theme.shape.borderRadius,
-            backgroundColor: theme.palette.secondary.dark,
+            backgroundColor: theme.palette.primary.main,
             width: "65vw",
             height: "90vh",
             marginTop: "10px",
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) =>
         paper: {
             borderRadius: theme.shape.borderRadius,
             textAlign: "center",
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: theme.palette.primary.light,
             paddingTop: "15px",
             paddingBottom: "15px",
             padding: "10px",
@@ -49,17 +49,18 @@ const useStyles = makeStyles((theme: Theme) =>
             textAlign: "center",
             marginTop: "20px",
             marginBottom: "10px",
-            color: theme.palette.primary.light,
         },
         button: {
             textAlign: "center",
             marginTop: "2%",
             marginBottom: "2%",
+            color: theme.palette.primary.dark,
         },
         icon: {
             textAlign: "center",
             marginTop: "5%",
             marginBottom: "5%",
+            color: theme.palette.secondary.main,
         },
         link: {
             color: theme.palette.primary.dark,
@@ -99,7 +100,6 @@ const About: React.FC = () => {
                     <Button 
                         className={classes.button} 
                         href="https://drive.google.com/file/d/1yTkgWo5hM0Mx-6mwY2rfKlXqjJr6Q-P9/view?usp=sharing" 
-                        color="inherit"
                         variant="outlined"
                     >
                         View My Resume
@@ -127,7 +127,6 @@ const About: React.FC = () => {
                         <Button 
                             className={classes.button} 
                             href="https://github.com/tyrakrehbiel/tkrehbielportfolio" 
-                            color="inherit"
                             variant="outlined"
                         >
                             GitHub

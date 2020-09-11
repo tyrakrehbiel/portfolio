@@ -14,8 +14,8 @@ import 'fontsource-open-sans';
 const fontFamily = ['raleway', 'open sans'].join(',');
 
 const lightgrey = '#F6F6F6';
-// const green = '#51826F' // accent color
-const green = '#E2EAE1';
+const green = '#51826F' // accent color
+// const green = '#E2EAE1';
 const medgrey = '#272727';
 
 const theme = createMuiTheme({
@@ -75,7 +75,7 @@ const theme = createMuiTheme({
             fontSize: '0.8rem',
             letterSpacing: '7px',
             textTransform: 'uppercase',
-            color: green,
+            color: medgrey,
         },
     },
     shape: {
