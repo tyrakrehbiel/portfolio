@@ -34,19 +34,19 @@ const Header: React.FC = () => {
                     <Typography variant="h2" className={classes.title}>
                         Tyra Krehbiel
                     </Typography>
-                    <Button className={classes.button} color="inherit" component={Link} to="/tkrehbielportfolio/about">
+                    <Button className={classes.button} color="inherit" component={Link} to="/portfolio/about">
                         About
                     </Button>
-                    <Button className={classes.button} color="inherit" component={Link} to="/tkrehbielportfolio/resume">
+                    <Button className={classes.button} color="inherit" component={Link} to="/portfolio/resume">
                         Resume
                     </Button>
-                    <Button className={classes.button} color="inherit" component={Link} to="/tkrehbielportfolio/projects">
+                    <Button className={classes.button} color="inherit" component={Link} to="/portfolio/projects">
                         Projects
                     </Button>
-                    <Button className={classes.button} color="inherit" component={Link} to="/tkrehbielportfolio/art">
+                    <Button className={classes.button} color="inherit" component={Link} to="/portfolio/art">
                         Art
                     </Button>
-                    <Button className={classes.button} color="inherit" component={Link} to="/tkrehbielportfolio/contact">
+                    <Button className={classes.button} color="inherit" component={Link} to="/portfolio/contact">
                         Contact
                     </Button>
                 </Toolbar>
