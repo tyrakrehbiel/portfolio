@@ -25,10 +25,12 @@ const theme = createMuiTheme({
         },
         primary: {
             main: lightgrey,
+            dark: green,
             contrastText: medgrey
         },
         secondary: {
             main: medgrey,
+            dark: green,
             contrastText: '#FFF'
         },
         divider: 'white',
@@ -46,17 +48,16 @@ const theme = createMuiTheme({
         },
         h2: {
             font: 'Raleway',
-            fontSize: '1.75rem',
+            fontSize: '1.25rem',
             letterSpacing: '2px',
-            color: green,
+            textTransform: 'uppercase',
+            color: medgrey,
         },
         h3: {
             font: 'Raleway',
             fontSize: '1.25rem',
             letterSpacing: '2px',
             color: medgrey,
-            textTransform: 'uppercase',
-            fontWeight: 500,
         },
         body1: {
             font: 'Open Sans',
