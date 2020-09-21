@@ -91,7 +91,7 @@ const About: React.FC = () => {
             >
                 <img className={classes.image} alt="Tyra Krehbiel" src={profile_pic} />
                 <Typography variant="h3">
-                    About Me 9/22<hr/>
+                    About Me<hr/>
                 </Typography>
                 <Typography className={classes.profBody} variant="body1">
                     Hello, I'm Tyra! I am currently enrolled as a fourth year at the University of Virginia, 
