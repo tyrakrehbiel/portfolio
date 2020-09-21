@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         title: {
             padding: "40px",
-            textAlign: "center",
+            textAlign: "center", 
         },
     })
 );
