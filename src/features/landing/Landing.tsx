@@ -1,13 +1,17 @@
 import { createStyles, makeStyles, Paper, Theme, Typography } from '@material-ui/core';
 import * as React from 'react';
 
+import Image from '../../images/landing.jpg';
+
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
             flexgrow: 1,
         },
         paper: {
-            backgroundImage: `url(${'../../images/landing.jpg'})`,
+            backgroundImage: `url(${Image})`,
+            width: '100%',
+            height: '100vh',
         },
         title: {
             padding: "40px",
