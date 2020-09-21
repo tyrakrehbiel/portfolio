@@ -1,8 +1,9 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Header from './common/header/Header';
+import Landing from './features/landing/Landing';
 import About from './features/about/About';
 import Contact from './features/contact/Contact';
 import Projects from './features/projects/Projects';
@@ -15,11 +16,11 @@ const App: React.FC = () => {
       <CssBaseline />
       <Header />
       <Switch>
-        <Redirect path="/portfolio/" exact to={{pathname:'/portfolio/about'}} />        
-        <Route exact path='/portfolio/about' component={About} />
-        <Route exact path='/portfolio/contact' component={Contact} />
-        <Route exact path='/portfolio/projects' component={Projects} />
-        <Route exact path='/portfolio/art' component={Art} />
+        <Route exact path='/' component={Landing} />        
+        <Route exact path='/about' component={About} />
+        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/projects' component={Projects} />
+        <Route exact path='/art' component={Art} />
       </Switch>
     </>
   );
