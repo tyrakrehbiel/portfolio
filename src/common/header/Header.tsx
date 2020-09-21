@@ -37,7 +37,7 @@ const Header: React.FC = () => {
                     <Button className={classes.button} color="inherit" component={Link} to="/about">
                         About
                     </Button>
-                    <Button className={classes.button} color="inherit" component={Link} to="projects">
+                    <Button className={classes.button} color="inherit" component={Link} to="/projects">
                         Projects
                     </Button>
                     <Button className={classes.button} color="inherit" component={Link} to="/art">
